@@ -279,6 +279,144 @@ section {
 }
 
 .tab-list {
-    display: flex;
-    
+    display: flex;  
+}
+
+/* .tab-box {
+    background: rgba(0, 0, 0, 0.6);
+} */
+
+.tab-box :hover{
+    transition: .3s;
+    filter: brightness(40%);
+}
+
+.tab-box {
+    overflow: hidden;
+}
+
+.tab-box .conver {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.tab-box:hover .conver {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+/* .tab-box:hover .tes-text{
+    color: white;
+    opacity: 100%;
+} */
+.content-overlay {
+    position: relative;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    opacity: 0;
+    transition: ease-in-out;
+    background: black;
+    cursor: pointer;
+}
+.content-text{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    color: white;
+    text-align: center;
+    z-index: 10;
+}
+
+
+
+.tab-box:hover .content-overlay {
+    opacity: 100%;
+}
+
+.card-body::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    background-color: gainsboro;
+    display: block;
+    margin-top: 25px;
+}
+
+.card-blog {
+    overflow: hidden;
+}
+
+.card-blog .blog {
+    transition: all 0.3s ease;
+    -webkit-transition: all 0.3s ease;
+    -moz-transition: all 0.3s ease;
+    -ms-transition: all 0.3s ease;
+    -o-transition: all 0.3s ease;
+}
+
+.card-blog:hover .blog {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+    -ms-transform: scale(1.2);
+    -o-transform: scale(1.2);
+}
+
+.card-blog:hover .card-title{
+    color: #feb900 !important;
+}
+
+.card-blog:hover .card-link{
+    color: #feb900 !important;
+}
+
+.card-link{
+    color: black;
+    text-decoration: none;
+}
+
+.card-text i{
+    color: #feb900;
+}
+
+.footer .container .link a {
+    font-size: 18px;
+    display: inline-block;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    line-height: 1;
+    margin-right: 8px;
+    border-radius: 4px;
+    padding: 10px;
+    transition: 0.3s;
+}
+
+.a{
+    color: var(---color-secondary);
+}
+
+
+.footerr::after{
+    content: "";
+    background-color:#364d59;
+    width: 100%;
+    height: 1px;
+    margin: auto;
+    display: block;
+    margin-top: 25px;
+}
+
+.footer{
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.585),rgba(0, 0, 0, 0.702)) , url(https://bootstrapmade.com/demo/templates/UpConstruction/assets/img/footer-bg.jpg);
+}
+
+.boot{
+    color: #feb900;
 }
