@@ -210,9 +210,9 @@ section {
     color: #feb900 !important;
 }
 
-.nav-item .btn-link.active {
-    border-bottom: 3px solid var(--color-secondary);
-}
+ /* .btn-link.active .btn-link::after {
+    color: #feb900;
+} */
 
 .btn-tab {
     border: none;
@@ -251,7 +251,7 @@ section {
 }
 
 .btn-link.active.btn-link::after {
-    background-color: var(--color-primary);
+    background-color: var(--color-secondary);
 }
 
 .desc-feature {
@@ -349,7 +349,7 @@ section {
     margin-top: 25px;
 }
 
-.card-blog {
+.card-spot {
     overflow: hidden;
 }
 
@@ -419,4 +419,12 @@ section {
 
 .boot{
     color: #feb900;
+}
+
+.nav-item {
+    color: #a7adb0;
+}
+
+.nav-item:hover {
+    color: white;
 }
